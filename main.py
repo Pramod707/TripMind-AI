@@ -13,6 +13,9 @@ load_dotenv()
 
 ##create agent
 
+llm = ChatGroq(
+    model="llama-3.3-70b-versatile"
+)
  
 
 
