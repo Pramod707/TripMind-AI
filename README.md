@@ -178,23 +178,6 @@ Open the local URL shown by Streamlit, typically `http://localhost:8501`.
 
 > Plan a 5-night trip from Hyderabad to London for two adults, departing December 15, 2026, with a total budget of ₹200,000. Include historical attractions, local food, and a practical day-by-day itinerary.
 
-## ⚠️ Current Limitations
-
-- **Flight availability and fares:** AviationStack's flight-status endpoint does not provide verified future bookable ticket prices. Matching flight records may be unavailable for some routes.
-- **Hotel prices and availability:** Search results are informational and do not confirm a reservation or live room inventory.
-- **Budget validation:** LLM-generated cost estimates may be inaccurate or exceed the requested budget; totals should be checked independently.
-- **Travel information:** Visa requirements, operating hours, prices, and transport schedules can change.
-- **Airport extraction:** Natural-language airport-code extraction should be validated against an authoritative airport dataset before production use.
-
-## 🗺️ Potential Improvements
-
-- Integrate a flight-offers API for live pricing and booking-related information.
-- Add validated airport and city lookup.
-- Use structured outputs for flight, hotel, and itinerary data.
-- Add deterministic budget calculations and feasibility checks.
-- Display route maps, hotel images, and interactive day-by-day itinerary cards.
-- Add automated tests for API failures, empty responses, and budget constraints.
-
 ## 🔐 Security
 
 Keep credentials in environment variables and exclude `.env`, local virtual environments, and sensitive checkpoint exports from Git. Do not expose API keys in screenshots, logs, or frontend responses.
